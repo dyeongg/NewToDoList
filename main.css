@@ -1,0 +1,18 @@
+div {
+  color: white;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 60px;
+  background-color: rgb(255, 82, 55);
+}
+
+input {
+  height: 50px;
+  width: 300px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
