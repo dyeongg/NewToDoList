@@ -1,12 +1,14 @@
 body {
   margin: 0;
 }
+
 input {
   height: 50px;
   width: 300px;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 10px;
-  border: 1px solid black;
+  border: none;
+  background-color: white;
   padding: 5px;
 }
 
@@ -14,16 +16,18 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 button {
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 30px;
   border: none;
   background-color: rgb(255, 151, 151);
   color: white;
-  padding: 10px 18px;
+  padding: 10px 15px;
   cursor: pointer; /* 포인터 커서 추가 */
+  margin-left: 10px;
 }
 
 button:hover {
@@ -31,13 +35,22 @@ button:hover {
 }
 
 h2 {
-  font-size: 40px;
-  align-items: center;
+  font-size: 30px;
 }
 
 header {
   font-size: 30px;
   background-color: rgb(190, 159, 211);
   width: 100%;
-  align-items: center;
+  display: flex;
 }
+
+.box {
+  background-image: url('./image/paper.png');
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+  height: 300px;
+  transform: translate(0%, 10%);
+}
+
