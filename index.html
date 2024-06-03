@@ -6,24 +6,26 @@
   <title>💛My To Do List💛</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
   <link rel="stylesheet" href="./main.css">
+  <script defer src="./main.js"></script>
 </head>
 <body>
   <header>
     <img src="./image/logo.png" title="로고">
     <nav>
-      <ul>
-        <li><a href="http://">home</a></li>
-        <li><a href="http://">login</a></li>
-      </ul>
+      <div class="nav-container">
+        <div class="nav-item"><a href="http://">HOME</a></div>
+        <div class="nav-item"><a href="http://">LOGIN</a></div>
+      </div>
     </nav>
   </header>
   <div class="container">
     <div class="box">
       <h2>💛My To Do List💛</h2>
-      <div2>
-        <input type="text" placeholder="할일을 추가해보세요!">
-        <button>+</button>
-      </div2>
+      <div>
+        <input type="text" id="myInput" placeholder="할일을 추가해보세요!">
+        <button class="addBtn">+</button>
+      </div>
+      <ul id="myUL"></ul>
     </div>
   </div>
 </body>

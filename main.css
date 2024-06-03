@@ -16,7 +16,7 @@ input {
   letter-spacing: 10px;
   font-size: 20px;
   border: none;
-  border-bottom: 1px solid rgb(94, 67, 40);
+  border-bottom: 4px solid #f5e9c2;
   background-color: transparent;
   padding: 10px;
 }
@@ -46,7 +46,7 @@ h2 {
   font-size: 30px;
   font-family: 'MyCustomFont', sans-serif; /* MyCustomFont 적용, 기본 명조체 */
   letter-spacing: 2px; /* 글자의 자간 설정 */
-  height: 70px;
+  margin-bottom: 30px;
 }
 
 header {
@@ -55,28 +55,46 @@ header {
   width: 100%;
   height: 80px;
   background-color: rgb(236, 216, 162);
-  position: relative;
 }
 
-header nav ul {
+.nav-container {
   display: flex;
-  list-style: none; /* 기본 목록 마커 제거 */
+  padding-top: 50px;
+  padding-right: 80px;
 }
 
-header nav ul a {
-  font-size: 18px;
-  color: white;
+.nav-item a {
   text-decoration: none;
-  padding: 30px;
-  display: flex; /* flex 컨테이너로 만듦 */
+  letter-spacing: 3px;
+  color: #ffffff;
+  padding: 0px 30px;
+  align-items: flex-end;
 }
+
 
 .box {
+  position: relative;
+  width: 400px;
+  height: 500px;
   background-image: url('./image/paper.png');
   background-size: cover;
   background-position: center;
   padding: 150px;
-  height: 400px;
   transform: translate(0%, 10%);
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  font-family: 'MyCustomFont', sans-serif;
+  letter-spacing: 5px;
+  padding: 20px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+}
