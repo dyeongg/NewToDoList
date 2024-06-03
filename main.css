@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./온글잎\ 밑미.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
 }
@@ -6,9 +13,9 @@ input {
   height: 50px;
   width: 300px;
   font-size: 20px;
-  border-radius: 10px;
   border: none;
-  background-color: white;
+  border-bottom: 2px solid rgb(94, 67, 40);
+  background-color: transparent;
   padding: 5px;
 }
 
@@ -36,6 +43,8 @@ button:hover {
 
 h2 {
   font-size: 30px;
+  font-family: 'MyCustomFont', serif; /* MyCustomFont 적용, 기본 명조체 */
+  letter-spacing: 2px; /* 글자의 자간 설정 */
 }
 
 header {
