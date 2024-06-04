@@ -47,6 +47,7 @@ h2 {
   font-family: 'MyCustomFont', sans-serif; /* MyCustomFont 적용, 기본 명조체 */
   letter-spacing: 2px; /* 글자의 자간 설정 */
   margin-bottom: 30px;
+  margin-top: 45px;
 }
 
 header {
@@ -75,11 +76,13 @@ header {
 .box {
   position: relative;
   width: 400px;
-  height: 500px;
-  background-image: url('./image/paper.png');
-  background-size: cover;
-  background-position: center;
-  padding: 150px;
+  height: 600px;
+  background-color: #f8f0d6;
+  background-image: url('./image/paperlogo.png'), url('./image/Tape.png');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100px, 400px;
+  background-position: center 20px;
+  padding: 60px;
   transform: translate(0%, 10%);
 }
 
