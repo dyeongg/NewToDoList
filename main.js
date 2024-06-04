@@ -14,6 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     li.addEventListener('click', function() {
       li.classList.toggle('checked');
     });
+
+    const close = document.createElement("span");
+    close.classList.add("close");
+    close.appendChild(document.createTextNode("\u00D7"));
+    li.appendChild(close);
+
+    close.addEventListener('click', function() {
+      li.remove();
+    });
   }
 
   // "추가" 버튼 클릭 이벤트 처리
