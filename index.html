@@ -5,27 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>💛My To Do List💛</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" href="../Home/main.css">
   <link rel="stylesheet" href="./main.css">
   <script defer src="./main.js"></script>
 </head>
 <body>
-  <header>
-    <img src="./image/logo.png" title="로고">
-    <nav>
-      <div class="nav-container">
-        <div class="nav-item"><a href="http://">HOME</a></div>
-        <div class="nav-item"><a href="http://127.0.0.1:5500/login/index.html?">LOGIN</a></div>
+  <div class="sidebar">
+    <ul>
+      <li>
+        <li class="logo">
+          <a href="#">
+            <span class="icon"><img src="../Home/메리야쓰.png"></span>
+            <span class="text">Website Logo</span>
+          </a> 
+        </li>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/Home/index.html">
+          <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+          <span class="text">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/login/index.html">
+          <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+          <span class="text">Login</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+          <span class="text">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/NewToDoList/index.html">
+          <span class="icon"><ion-icon name="reader-outline"></ion-icon></span>
+          <span class="text">Mytodolist</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+          <span class="text">settings</span>
+        </a>
+      </li>
+      <div class="bottom">
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+            <span class="text">logout</span>
+          </a>
+        </li>
       </div>
-    </nav>
-  </header>
-  <div class="container">
-    <div class="box">
-      <h2>💛My To Do List💛</h2>
-      <div>
-        <input type="text" id="myInput" placeholder="할일을 추가해보세요!">
-        <button class="addBtn">+</button>
+    </ul>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <div class="main">
+    <div class="container">
+      <div class="box">
+        <h2>💛My To Do List💛</h2>
+        <div>
+          <input type="text" id="myInput" placeholder="할일을 추가해보세요!">
+          <button class="addBtn">+</button>
+        </div>
+        <ul id="myUL"></ul>
       </div>
-      <ul id="myUL"></ul>
     </div>
   </div>
 </body>
